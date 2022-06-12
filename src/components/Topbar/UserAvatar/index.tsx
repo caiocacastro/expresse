@@ -17,7 +17,7 @@ export default function UserAvatar(props: State) {
           <Username>{user.name}</Username>
         </>
       ) : (
-        <>Faça sua autenticacao </>
+        <>Faça um Login </>
       )}
     </Container>
   );
