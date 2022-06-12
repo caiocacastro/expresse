@@ -29,7 +29,7 @@ function Topbar(props: State) {
   return (
     <>
       <Container>
-        <Content>
+        <Content style={{ userSelect: "none" }}>
           <TabButton
             onClick={() => onNavClick("/")}
             selected={navPath.pathname === "/" ? true : false}

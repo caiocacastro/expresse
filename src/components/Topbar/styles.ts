@@ -1,3 +1,4 @@
+import { borderBottom } from "@mui/system";
 import styled from "styled-components";
 import { colors } from "../../model/style";
 
@@ -18,20 +19,19 @@ type TopProps = {
   selected?: boolean;
 };
 export const TabButton = styled.div(({ selected }: TopProps) => ({
+  cursor: "pointer",
   padding: "20px 30px",
   background: selected
     ? `linear-gradient(180deg, ${colors.secondary}, ${colors.primary})`
-    : "inherit",
+    : `inherit`,
   color: selected ? colors.secondary : "inherit",
-  cursor: "pointer",
-  userSelect: "none",
+  fontWeight: selected ? "bold" : "normal",
 }));
 
 export const BottomSpacer = styled.div`
   background: linear-gradient(
     90deg,
-    ${colors.secondary},
-    ${colors.primary} 20%,
+    ${colors.primary},
     ${colors.primary} 80%,
     ${colors.secondary}
   );

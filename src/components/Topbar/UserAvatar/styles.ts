@@ -3,7 +3,8 @@ import { colors } from "../../../model/style";
 
 export const Container = styled.div`
   display: flex;
-  padding: 20px 30px;
+  align-items: center;
+  padding: 0px 30px;
   transition: ease all 0.1s;
   user-select: none;
   cursor: pointer;
